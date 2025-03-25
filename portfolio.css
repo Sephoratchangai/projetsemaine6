@@ -100,10 +100,6 @@ span{
 
 .container {
     display: flex;
-    background: rgb(229, 228, 228);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     align-items: center;
     display: flex;
     justify-content: center;
@@ -183,12 +179,18 @@ h2 {
     text-align: center;
     font-weight: bold;
     margin-bottom: 20px;
+   
 }
 
 h2 span {
     color: #b71e03;
 }
-
+.apropos{
+    background: rgb(229, 228, 228);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
 .bas{
     background-color: #1e1e1e;
@@ -206,10 +208,9 @@ input{
     background-color: #1e1e1e;
     padding: auto;
     border-radius: 10px;
-    width: 100%;
     margin: 40px;
-    max-width: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width:- 50%;
+    width: auto;
 }
 
 .form-group {
@@ -219,7 +220,7 @@ input{
 input, textarea {
     width: 100%;
     padding: 12px;
-    border: none;
+    border-color: #b71e03 2px;
     border-radius: 5px;
     background-color: #333;
     color: white;
