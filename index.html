@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+    <body>
+      <!-- debut menu -->
+      <nav class="navbar">
+        <div class="logo">
+            <span class="white">TCHANGAI </span><span class="red">Nica</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#about" >À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#">Compétences</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- fin menu -->
+
+      <!-- home section -->
+        <section class="hero" >
+          <div class="hero-content">
+              <h1>Je suis <span class="red">Nica</span>, Développeur en devenir passionnée par le web et le design !</h1>
+              <a href="#" class="btn">Voir mes projets</a>
+          </div>
+          <div class="hero-image">
+              <img src="img.jpg" alt="hero-image">
+          </div>
+        </section>
+      <!-- home section -->
+      <!-- a propos -->
+      <h2 style="text-align: center;">À propos</h2>
+      <div class="container" id="about">
+        <div class="text">
+            
+            <p>Je m'appelle <strong>TCHANGAI</strong>, passionné par la création de sites web modernes et interactifs.</p>
+            <p>Je suis actuellement étudiant(e) en <strong style="color:#b71e03">développement web</strong>, et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+            <p>J’adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+            <a href="#" class="btn" id="downloadCV">Télécharger mon CV</a>
+        </div>
+        <div class="photo">
+            <img src="logo.png" alt="Photo de profil">
+        </div>
+    </div>
+    <!-- a propos -->
+        <h2 id="projets">Mes projets</h2>
+        <div id="bloc">
+          <div class="bloc">
+            <p>un mini-jeu interractif en javascript qui utilise des évenements DOM
+              <br>
+              <br>
+              <p>#html, #css, #js</p>
+              <button class="btn">Voir</button>
+            </p>
+          </div>
+          <div class="bloc">
+            <p>un mini-jeu interractif en javascript qui utilise des évenements DOM
+              <br>
+              <br>
+              <p>#html, #css, #js</p>
+              <button class="btn">Voir</button>
+            </p>
+          </div>
+          <div class="bloc">
+            <p>un mini-jeu interractif en javascript qui utilise des évenements DOM
+              <br>
+              <br>
+              <p>#html, #css, #js</p>
+              <button class="btn">Voir</button>
+            </p>
+          </div>
+        </div>
+
+      </section>
+      <div class="competences">
+        <h2 style="text-align: center; color: #b71e03; margin-bottom: 5%;">Mes compétences</h2>
+          <div class="contain">
+            
+            <div class="card">
+                <h3>Soft Skills</h3>
+                <p>Gestion de projet</p>
+                <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+                <p>Résolution de problème</p>
+                <div class="progress-bar"><div class="progress" data-progress="60"></div></div>
+                <p>Adaptabilité</p>
+                <div class="progress-bar"><div class="progress" data-progress="50"></div></div>
+            </div>
+            <div class="card">
+                <h3>Hard Skills</h3>
+                <p>HTML</p>
+                <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+                <p>CSS</p>
+                <div class="progress-bar"><div class="progress" data-progress="70"></div></div>
+                <p>JavaScript</p>
+                <div class="progress-bar"><div class="progress" data-progress="60"></div></div>
+                <p>VS Code</p>
+                <div class="progress-bar"><div class="progress" data-progress="95"></div></div>
+            </div>
+        </div>
+      </div>
+      <div class="bas">
+        <h2>Vous avez un <span>projet en tête</span>? <br> N'hésitez pas à me <span>contacter</span></h2>
+        <div class="containe">
+            <div class="form-group">
+                <input type="text" placeholder="Votre prénom">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Votre sujet">
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Écrivez votre message ici..."></textarea>
+            </div>
+            <button class="btn">Envoyer</button>
+        </div>
+      </div>
+        <div class="footer">
+          <ul>
+            <li>Designed by<span>Nica</span> with HTML CSS JS <br></li>
+            <li>Tous droits réservés - 2025</li>
+          </ul>
+            
+        </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".progress").forEach(progress => {
+                let value = progress.getAttribute("data-progress");
+                progress.style.width = value + "%";
+            });
+        });
+    </script>
+    </body>
+</html>
